@@ -1,7 +1,7 @@
 Project Title: Generative adversarial networks to project the effects of
 colorectal cancer treatments on human single-cells
 
-Part 1 - How to use the code
+### Part 1 - How to use the code
 
 Please use Python 3.7. I used Pycharm on top of Anaconda but any IDE or your Python interpreter should do the trick.
 
@@ -12,7 +12,7 @@ an IDE or your Python interpreter to run all the Python scripts where scanpy is 
 
 I recommend commenting out all the code for the kernel two-sample tests as it takes hours to run.
 
-Part 2 - How to download the data
+### Part 2 - How to download the data
 
 Step(s) to download the datasets:
 1) Please go on: http://tisch.comp-genomics.org/gallery/?cancer=CRC&celltype=&species=
