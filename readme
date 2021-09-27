@@ -1,9 +1,4 @@
-Name: Ambroise Reynier
-Student Number: k20036699
-Degree Programme: MSc Data Science
-Supervisor: Dr. Sophia Tsoka
-
-Project Title: Generative adversarial networks to project, simulate the effects of
+Project Title: Generative adversarial networks to project the effects of
 colorectal cancer treatments on human single-cells
 
 Part 1 - How to use the code
@@ -20,12 +15,6 @@ I recommend commenting out all the code for the kernel two-sample tests as it ta
 Part 2 - How to download the data
 
 Step(s) to download the datasets:
-
-Either:
-- Download them directly from my Google Drive: https://drive.google.com/drive/folders/1ks1ra1LIFspwHZfiqFQ4FRPvByUJYnbO
-
-Or (if there is any problem):
-
 1) Please go on: http://tisch.comp-genomics.org/gallery/?cancer=CRC&celltype=&species=
 2) Click on the dataset name
 3) Click on "Download"
@@ -34,44 +23,3 @@ Or (if there is any problem):
 The two datasets are:
 - "CRC_GSE108989"
 - "CRC_GSE112865_mouse_aPD1"
-
-Part 3 - How to download the other files
-
-All the other files necessary to run the code and all the Python scripts are at the same time
-in my Google Drive (https://drive.google.com/drive/folders/1ks1ra1LIFspwHZfiqFQ4FRPvByUJYnbO)
-and in the zip.
-
-You should find:
-
-- The mapping between mouse and human genes: "mouse_human_homologues.csv"
-- A csv of the labels of the human dataset to reduce the runtime of the code: "labels.csv"
-- A csv with the projected data in order to work on the same data: "df_projected_mouse.csv"
-- The saved model from the ANN mapping: "ann_mapping"
-- The saved model from the ANN clusters: "ann_predict_clusters"
-- The saved generator trained for 10,000 epochs: "generator_human_10000_shuffle_128_batch"
-- The saved generator trained for 20,000 epochs: "generator_human_20000_shuffle_128_batch"
-- The saved generator trained for 30,000 epochs: "generator_human_30000_shuffle_128_batch"
-- Statement certifying the work is my own: "Statement.pdf"
-
-Please put all the files in the base directory of an IDE or your Python interpreter, or change the path in all the python scripts.
-
-Part 4 - General structure of the Python scripts
-
-The logic of the script is the following:
-
-1) data_preprocessing.py: reads and transforms the h5 files into dense matrices then takes the common genes
-2) utils.py: contains all the functions and mapping that are used throughout the project (functions based on scanpy,
-mappings and kernel two-sample test)
-3) analysis_pre_wgan_gp.py: single-cell analysis of the human and mouse datasets pre wgan gp
-4) wgan_gp_human.py: code for the model
-5) conditional_wgan_gp_human.py: code for the test model
-6) wgan_gp_model_selection.py: compare the three different models on different criteria
-7) ann_mapping.py: training and evaluation of the ann_mapping model
-8) ann_predict_clusters_human_non_mapped.py: tests without the mapping for the ANNs used to predict clusters
-9) ann_predict_clusters_human_mapped.py: tests with the mapping for the ANNs used to predict clusters
-10) random_forest_predict_clusters_human_non_mapped.py: tests without the mapping for the random forests used to predict clusters
-11) random_forest_predict_clusters_human_mapped.py: tests with the mapping for the random forests used to predict clusters
-12)  random_forest_predict_clusters_mouse.py: test for the random forest based on mouse data used to predict clusters
-13) train_models_on_full_data.py: train the most well-performing models on full data and save the most well-performing ANN
-14) projection_and_simulation.py: generate the projected data and evaluate the projection (all the code commented out
-was used to generate the projected data, it might be necessary to change the order of the code to generate again the data)
