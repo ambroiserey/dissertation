@@ -1,5 +1,4 @@
-Project Title: Generative adversarial networks to project the effects of
-colorectal cancer treatments on human single-cells
+## Project Title: Generative adversarial networks to project the effects of cancer treatments on human colorectal single-cells
 
 ### Part 1 - How to use the code
 
