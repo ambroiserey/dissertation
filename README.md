@@ -4,7 +4,7 @@
 
 Please use Python 3.7. I used Pycharm on top of Anaconda but any IDE or your Python interpreter should do the trick.
 
-Please find a list of the modules to be used/downloaded with their versions in the file "modules" in the google drive or zip.
+Please find a list of the modules to be used/downloaded with their versions in the file "modules".
 
 Jupyter Notebooks does not work at all with scanpy when Google Colab works partially with scanpy. I recommend using
 an IDE or your Python interpreter to run all the Python scripts where scanpy is used.
@@ -23,6 +23,6 @@ The two datasets are:
 - "CRC_GSE108989"
 - "CRC_GSE112865_mouse_aPD1"
 
-### The project will be published here once the dissertation has been reviewed. I will continue working on it.
+### I will continue working on the project once it has been reviewed by my supervisor.
 
 ### Stay tuned for updates in the following weeks!
