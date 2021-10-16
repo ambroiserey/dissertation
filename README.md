@@ -14,10 +14,10 @@ I recommend commenting out all the code for the kernel two-sample tests as it ta
 ### Part 2 - How to download the data
 
 Step(s) to download the datasets:
-1) Please go on: http://tisch.comp-genomics.org/gallery/?cancer=CRC&celltype=&species=
-2) Click on the dataset name
-3) Click on "Download"
-4) Download "Single-cell expression matrix" and "Meta information" for each dataset
+1) Please go on: http://tisch.comp-genomics.org/gallery/?cancer=CRC&celltype=&species=;
+2) Click on the dataset name;
+3) Click on "Download";
+4) Download "Single-cell expression matrix" and "Meta information" for each dataset.
 
 The two datasets are:
 - "CRC_GSE108989"
@@ -25,4 +25,4 @@ The two datasets are:
 
 ### I will continue working on the project once it has been reviewed by my supervisor.
 
-### Stay tuned for updates in the following weeks!
+### Stay tuned for updates in the upcoming weeks!
